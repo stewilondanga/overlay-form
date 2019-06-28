@@ -118,7 +118,7 @@ ul li {
   color: white;
 }
 
-/*.closeOverlay {
+.closeOverlay {
   padding: 8px;
   width: 25%;
   background: #1ACE90;
@@ -126,7 +126,7 @@ ul li {
   color: white;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
