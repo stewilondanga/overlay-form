@@ -64,7 +64,7 @@ ul li {
   justify-items: center;
 }
 
-/*.c-overlay-form__display__value {
+.c-overlay-form__display__value {
   display: inline-block;
   background-color: #1ACE90;
   width: 200px;
@@ -72,7 +72,8 @@ ul li {
   text-align: center;
   border-radius: 50px;
 }
-.c-overlay-form__form-container {
+
+/*.c-overlay-form__form-container {
   display: grid;
   align-items: center;
   grid-row-gap: 50px;
