@@ -44,12 +44,12 @@ ul {
   margin: 0px;
 }
 
-/*ul li {
+ul li {
   list-style-type: none;
   padding: 0px;
 }
 
-.c-overlay-form {
+/*.c-overlay-form {
   margin-top: -50px;
   display: grid;
   align-items: center;
