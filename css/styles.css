@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -19,6 +19,111 @@ body {
 
 .my_social a img {
   height: 1.5em;
+}
+
+body {
+  margin: 0;
+  background: #e6e6e6;
+  color: #505050;
+  font-size: 24px;
+}
+
+.header {
+  font-size: 16px;
+  height: 50px;
+  padding: 16px;
+  border-bottom: 2px solid #505050;
+  width: 100%;
+}
+
+.header-left {
+  width: 49%;
+  display: inline-block;
+  position: relative;
+}
+
+.container {
+  height: 80px;
+  position: relative;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+ul li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.c-overlay-form {
+  margin-top: -50px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.c-overlay-form__display {
+  display: grid;
+  align-items: center;
+  grid-row-gap: 50px;
+  justify-items: center;
+}
+.c-overlay-form__display__value {
+  display: inline-block;
+  background-color: #1ACE90;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50px;
+}
+.c-overlay-form__form-container {
+  display: grid;
+  align-items: center;
+  grid-row-gap: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #505050;
+}
+.c-overlay-form__form {
+  display: grid;
+  align-items: center;
+  grid-row-gap: 50px;
+  justify-items: center;
+}
+.c-overlay-form__form__input {
+  width: 50%;
+  padding: 16px;
+  background: #e6e6e6;
+  border-radius: 50px;
+}
+.c-overlay-form__form__input input {
+  margin-top: 16px;
+  padding: 8px;
+}
+
+.close {
+  color: white;
+  font-size: 42px;
+}
+
+.submitForm {
+  padding: 8px;
+  width: 25%;
+  background: #1ACE90;
+  border-radius: 50px;
+  color: white;
+}
+
+.closeOverlay {
+  padding: 8px;
+  width: 25%;
+  background: #1ACE90;
+  border-radius: 50px;
+  color: white;
 }
 
 .containers {
