@@ -28,13 +28,13 @@ body {
   width: 100%;
 }
 
-/*.header-left {
+.header-left {
   width: 49%;
   display: inline-block;
   position: relative;
 }
 
-.container {
+/*.container {
   height: 80px;
   position: relative;
 }
