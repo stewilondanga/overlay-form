@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  background: #e6e6e6;
+  color: #505050;
+  font-size: 24px;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -19,13 +26,6 @@
 
 .my_social a img {
   height: 1.5em;
-}
-
-body {
-  margin: 0;
-  background: #e6e6e6;
-  color: #505050;
-  font-size: 24px;
 }
 
 .header {
