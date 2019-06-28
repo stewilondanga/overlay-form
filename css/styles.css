@@ -57,13 +57,14 @@ ul li {
   height: 100vh;
 }
 
-/*.c-overlay-form__display {
+.c-overlay-form__display {
   display: grid;
   align-items: center;
   grid-row-gap: 50px;
   justify-items: center;
 }
-.c-overlay-form__display__value {
+
+/*.c-overlay-form__display__value {
   display: inline-block;
   background-color: #1ACE90;
   width: 200px;
