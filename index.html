@@ -21,6 +21,62 @@
         </a>
     </div>
 
+    <div id="app">
+
+      <overlay-form inline-template>
+        <div class="c-overlay-form">
+
+          <ul class="c-overlay-form__display">
+            <li v-for="(input,key) in formInputs" :key="key" class="c-overlay-form__display__item">
+              {{input.prefix}}
+              <div v-if="input.type == 'checkbox'" class="c-overlay-form__display__value" v-on:click="activeQuestion = input.name; overlayActive=true;">
+                  <span v-for="(value,k) in input.value" :key="k">{{value}}, </span>
+              </div>
+              <div v-else class="c-overlay-form__display__value" v-on:click="activeQuestion = input.name; overlayActive=true;"><span v-if="input.value.length > 0 || input.value !='' ">{{input.value}}</span></div>
+              {{input.suffix}}
+             </li>
+              <div class="submitForm" @click="formSubmit()">Submit</div>
+          </ul>
+
+
+
+          <div class="c-overlay-form__form-container" v-if="overlayActive">
+          <ul class="c-overlay-form__form" >
+             <li v-on:click="overlayActive = false;" class="close">
+              <i class="far fa-times-circle"></i>
+            </li>
+            <li v-for="(input,key) in formInputs" :key="key" class="c-overlay-form__form__input" v-if="activeQuestion == input.name">
+              <label :for="input.name">{{input.label}}</label>
+
+              <div v-if="!input.type">
+                <input :name="input.name" v-model="input.value">
+              </div>
+
+              <div v-if="input.type && input.type == 'checkbox'">
+                <div v-for="(checkbox,checkboxKey) in input.options">
+                   <label :for="checkbox.name">{{checkbox.label}}</label>
+                  <input type="checkbox" :name="checkbox.name"  v-model="input.value" :value="checkbox.name">
+                </div>
+              </div>
+
+              <div v-if="input.type && input.type == 'radio'">
+                <div v-for="(radio,radioKey) in input.options">
+                   <label :for="radio.name">{{radio.label}}</label>
+                  <input type="radio" :name="radio.name"  v-model="input.value" :value="radio.name">
+                </div>
+              </div>
+
+            </li>
+            <li class="closeOverlay" v-on:click="overlayActive = false;">
+              Submit
+            </li>
+          </ul>
+          </div>
+        </div>
+      </overlay-form>
+    </div>
+
+
   <section id="contact">
     <div class="overlay">
       <div class="containers">
