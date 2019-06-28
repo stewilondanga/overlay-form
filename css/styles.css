@@ -49,14 +49,15 @@ ul li {
   padding: 0px;
 }
 
-/*.c-overlay-form {
+.c-overlay-form {
   margin-top: -50px;
   display: grid;
   align-items: center;
   text-align: center;
   height: 100vh;
 }
-.c-overlay-form__display {
+
+/*.c-overlay-form__display {
   display: grid;
   align-items: center;
   grid-row-gap: 50px;
