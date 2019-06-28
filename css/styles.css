@@ -73,7 +73,7 @@ ul li {
   border-radius: 50px;
 }
 
-/*.c-overlay-form__form-container {
+.c-overlay-form__form-container {
   display: grid;
   align-items: center;
   grid-row-gap: 50px;
@@ -84,7 +84,8 @@ ul li {
   width: 100%;
   background-color: #505050;
 }
-.c-overlay-form__form {
+
+/*.c-overlay-form__form {
   display: grid;
   align-items: center;
   grid-row-gap: 50px;
