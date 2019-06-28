@@ -100,12 +100,12 @@ ul li {
   border-radius: 50px;
 }
 
-/*.c-overlay-form__form__input input {
+.c-overlay-form__form__input input {
   margin-top: 16px;
   padding: 8px;
 }
 
-.close {
+/*.close {
   color: white;
   font-size: 42px;
 }
