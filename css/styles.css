@@ -39,11 +39,12 @@ body {
   position: relative;
 }
 
-/*ul {
+ul {
   padding: 0px;
   margin: 0px;
 }
-ul li {
+
+/*ul li {
   list-style-type: none;
   padding: 0px;
 }
